@@ -1,6 +1,6 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./src/infrastructure/theme";
 import { RestaurantsScreen } from "./src/features/restaurants/screens/Restaurants.screen";
