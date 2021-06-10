@@ -15,7 +15,7 @@ import {
   Section,
   SectionEnd,
   Icon,
-} from "../components/restaurant-info-card.styles";
+} from "./restaurant-info-card.styles";
 
 const isAndroid = Platform.OS === "android";
 

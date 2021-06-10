@@ -3,7 +3,7 @@ import React from "react";
 import { Text } from "react-native";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./src/infrastructure/theme";
-import { RestaurantsScreen } from "./src/features/restaurants/screens/Restaurants.screen";
+import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
 import {
   useFonts as useOswald,
   Oswald_400Regular,
@@ -14,10 +14,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { SafeArea } from "./src/components/utility/safe-area-component";
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
-import {
-  LocationContextProvider,
-  locationContextProvider,
-} from "./src/services/location/location.context";
+import { LocationContextProvider } from "./src/services/location/location.context";
 
 const Tab = createBottomTabNavigator();
 
