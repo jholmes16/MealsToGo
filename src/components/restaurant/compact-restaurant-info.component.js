@@ -25,8 +25,8 @@ const Item = styled.View`
 
 const isAndroid = Platform.OS === "android";
 
-export const CompactRestaurantInfo = ({ restaurant }) => {
-  return isAndroid ? (
+export const CompactRestaurantInfo = ({ restaurant, isMap }) => {
+  return isAndroid && isMap ? (
     <Item>
       <Text center variant="caption" numberOfLines={3}>
         {restaurant.name}

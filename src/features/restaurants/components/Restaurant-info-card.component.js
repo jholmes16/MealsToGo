@@ -16,6 +16,7 @@ import {
   SectionEnd,
   Icon,
 } from "./restaurant-info-card.styles";
+import { Favorite } from "../../../components/favorite/favorite.component";
 
 const isAndroid = Platform.OS === "android";
 
@@ -37,6 +38,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 
   return (
     <RestaurantCard elevation={5}>
+      <Favorite restaurant={restaurant} />
       <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
       <Info>
         <Card.Content>
