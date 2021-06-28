@@ -10,12 +10,7 @@ import { FavoritesContext } from "../../../services/favorites/favorites.context"
 
 import { ActivityIndicator, Colors } from "react-native-paper";
 import { Search } from "../components/search.component";
-
-const RestaurantList = styled(FlatList).attrs({
-  contentContainerStyle: {
-    padding: 16,
-  },
-})``;
+import { RestaurantList } from "../components/restaurant-list.styles";
 
 const Loading = styled(ActivityIndicator)`
   margin-left: -25px;
